@@ -110,7 +110,16 @@ svg {
   -o-transform: translate(-50%, -50%);
 }
 
-#cv { font-size: 90px;
+#cv { font-size: 60px;
   font-weight: 100;
   opacity: 0.90;
   text-decoration:none;}
+
+@media screen and (min-width: 90rem) {
+
+  #cv { font-size: 90px;
+    font-weight: 100;
+    opacity: 0.90;
+    text-decoration:none;}
+}
+
