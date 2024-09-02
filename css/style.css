@@ -35,6 +35,20 @@ body {
   justify-content: center;
 }
 
+.sr-only {
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
 svg {
   position: absolute;
   height: 100%;
@@ -110,16 +124,37 @@ svg {
   -o-transform: translate(-50%, -50%);
 }
 
-#cv { font-size: 60px;
+#titre { font-size: 60px;
   font-weight: 100;
   opacity: 0.90;
   text-decoration:none;}
 
 @media screen and (min-width: 90rem) {
 
-  #cv { font-size: 90px;
+  #titre { font-size: 90px;
     font-weight: 100;
     opacity: 0.90;
     text-decoration:none;}
 }
 
+#cv {
+  font-family: Inter, Helvetica ,  Neue Helvetica, Arial, sans-serif;
+  background: rgb(237, 237, 239);
+  height:100%;
+  width: 100%;
+  padding: 0px;
+  justify-content: left;
+}
+
+@media screen and (min-width: 90rem) {
+
+  #cv {
+    font-family: Inter, Helvetica ,  Neue Helvetica, Arial, sans-serif;
+    background: rgb(237, 237, 239);
+    margin-top:35%;
+   height:100%;
+    width: 100%;
+    padding: 0px;
+    justify-content: left;
+  }
+}
